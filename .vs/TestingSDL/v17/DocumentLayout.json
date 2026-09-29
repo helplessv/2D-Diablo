@@ -1,0 +1,179 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ermak\\source\\repos\\TestingSDL\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E551F670-A8F0-48BA-AE3A-33A64E48C693}|TestingSDL\\TestingSDL.vcxproj|C:\\Users\\ermak\\source\\repos\\TestingSDL\\TestingSDL\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E551F670-A8F0-48BA-AE3A-33A64E48C693}|TestingSDL\\TestingSDL.vcxproj|solutionrelative:TestingSDL\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E551F670-A8F0-48BA-AE3A-33A64E48C693}|TestingSDL\\TestingSDL.vcxproj|C:\\Users\\ermak\\source\\repos\\TestingSDL\\TestingSDL\\ResourceManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E551F670-A8F0-48BA-AE3A-33A64E48C693}|TestingSDL\\TestingSDL.vcxproj|solutionrelative:TestingSDL\\ResourceManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E551F670-A8F0-48BA-AE3A-33A64E48C693}|TestingSDL\\TestingSDL.vcxproj|C:\\Users\\ermak\\source\\repos\\TestingSDL\\TestingSDL\\ResourceManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E551F670-A8F0-48BA-AE3A-33A64E48C693}|TestingSDL\\TestingSDL.vcxproj|solutionrelative:TestingSDL\\ResourceManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E551F670-A8F0-48BA-AE3A-33A64E48C693}|TestingSDL\\TestingSDL.vcxproj|C:\\Users\\ermak\\source\\repos\\TestingSDL\\TestingSDL\\Texture.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E551F670-A8F0-48BA-AE3A-33A64E48C693}|TestingSDL\\TestingSDL.vcxproj|solutionrelative:TestingSDL\\Texture.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E551F670-A8F0-48BA-AE3A-33A64E48C693}|TestingSDL\\TestingSDL.vcxproj|C:\\Users\\ermak\\source\\repos\\TestingSDL\\TestingSDL\\Character.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E551F670-A8F0-48BA-AE3A-33A64E48C693}|TestingSDL\\TestingSDL.vcxproj|solutionrelative:TestingSDL\\Character.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E551F670-A8F0-48BA-AE3A-33A64E48C693}|TestingSDL\\TestingSDL.vcxproj|C:\\Users\\ermak\\source\\repos\\TestingSDL\\TestingSDL\\Character.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E551F670-A8F0-48BA-AE3A-33A64E48C693}|TestingSDL\\TestingSDL.vcxproj|solutionrelative:TestingSDL\\Character.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E551F670-A8F0-48BA-AE3A-33A64E48C693}|TestingSDL\\TestingSDL.vcxproj|C:\\Users\\ermak\\source\\repos\\TestingSDL\\TestingSDL\\Texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E551F670-A8F0-48BA-AE3A-33A64E48C693}|TestingSDL\\TestingSDL.vcxproj|solutionrelative:TestingSDL\\Texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E551F670-A8F0-48BA-AE3A-33A64E48C693}|TestingSDL\\TestingSDL.vcxproj|C:\\Users\\ermak\\source\\repos\\TestingSDL\\TestingSDL\\Chunk.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E551F670-A8F0-48BA-AE3A-33A64E48C693}|TestingSDL\\TestingSDL.vcxproj|solutionrelative:TestingSDL\\Chunk.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E551F670-A8F0-48BA-AE3A-33A64E48C693}|TestingSDL\\TestingSDL.vcxproj|C:\\Users\\ermak\\source\\repos\\TestingSDL\\TestingSDL\\Chunk.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E551F670-A8F0-48BA-AE3A-33A64E48C693}|TestingSDL\\TestingSDL.vcxproj|solutionrelative:TestingSDL\\Chunk.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Character.h",
+              "DocumentMoniker": "C:\\Users\\ermak\\source\\repos\\TestingSDL\\TestingSDL\\Character.h",
+              "RelativeDocumentMoniker": "TestingSDL\\Character.h",
+              "ToolTip": "C:\\Users\\ermak\\source\\repos\\TestingSDL\\TestingSDL\\Character.h",
+              "RelativeToolTip": "TestingSDL\\Character.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-03-27T05:09:01.453Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Chunk.h",
+              "DocumentMoniker": "C:\\Users\\ermak\\source\\repos\\TestingSDL\\TestingSDL\\Chunk.h",
+              "RelativeDocumentMoniker": "TestingSDL\\Chunk.h",
+              "ToolTip": "C:\\Users\\ermak\\source\\repos\\TestingSDL\\TestingSDL\\Chunk.h",
+              "RelativeToolTip": "TestingSDL\\Chunk.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-03-27T05:07:48.64Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ResourceManager.h",
+              "DocumentMoniker": "C:\\Users\\ermak\\source\\repos\\TestingSDL\\TestingSDL\\ResourceManager.h",
+              "RelativeDocumentMoniker": "TestingSDL\\ResourceManager.h",
+              "ToolTip": "C:\\Users\\ermak\\source\\repos\\TestingSDL\\TestingSDL\\ResourceManager.h",
+              "RelativeToolTip": "TestingSDL\\ResourceManager.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-03-27T14:24:08.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ResourceManager.cpp",
+              "DocumentMoniker": "C:\\Users\\ermak\\source\\repos\\TestingSDL\\TestingSDL\\ResourceManager.cpp",
+              "RelativeDocumentMoniker": "TestingSDL\\ResourceManager.cpp",
+              "ToolTip": "C:\\Users\\ermak\\source\\repos\\TestingSDL\\TestingSDL\\ResourceManager.cpp",
+              "RelativeToolTip": "TestingSDL\\ResourceManager.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-27T14:21:58.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Texture.h",
+              "DocumentMoniker": "C:\\Users\\ermak\\source\\repos\\TestingSDL\\TestingSDL\\Texture.h",
+              "RelativeDocumentMoniker": "TestingSDL\\Texture.h",
+              "ToolTip": "C:\\Users\\ermak\\source\\repos\\TestingSDL\\TestingSDL\\Texture.h",
+              "RelativeToolTip": "TestingSDL\\Texture.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-03-27T05:40:20.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Texture.cpp",
+              "DocumentMoniker": "C:\\Users\\ermak\\source\\repos\\TestingSDL\\TestingSDL\\Texture.cpp",
+              "RelativeDocumentMoniker": "TestingSDL\\Texture.cpp",
+              "ToolTip": "C:\\Users\\ermak\\source\\repos\\TestingSDL\\TestingSDL\\Texture.cpp",
+              "RelativeToolTip": "TestingSDL\\Texture.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAcAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-26T14:25:24.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Chunk.cpp",
+              "DocumentMoniker": "C:\\Users\\ermak\\source\\repos\\TestingSDL\\TestingSDL\\Chunk.cpp",
+              "RelativeDocumentMoniker": "TestingSDL\\Chunk.cpp",
+              "ToolTip": "C:\\Users\\ermak\\source\\repos\\TestingSDL\\TestingSDL\\Chunk.cpp",
+              "RelativeToolTip": "TestingSDL\\Chunk.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-27T05:31:38.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Character.cpp",
+              "DocumentMoniker": "C:\\Users\\ermak\\source\\repos\\TestingSDL\\TestingSDL\\Character.cpp",
+              "RelativeDocumentMoniker": "TestingSDL\\Character.cpp",
+              "ToolTip": "C:\\Users\\ermak\\source\\repos\\TestingSDL\\TestingSDL\\Character.cpp",
+              "RelativeToolTip": "TestingSDL\\Character.cpp",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-26T14:24:39.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\ermak\\source\\repos\\TestingSDL\\TestingSDL\\main.cpp",
+              "RelativeDocumentMoniker": "TestingSDL\\main.cpp",
+              "ToolTip": "C:\\Users\\ermak\\source\\repos\\TestingSDL\\TestingSDL\\main.cpp",
+              "RelativeToolTip": "TestingSDL\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-18T19:33:28.474Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
