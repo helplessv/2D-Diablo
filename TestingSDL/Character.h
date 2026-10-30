@@ -1,55 +1,42 @@
+#pragma once
 #include <SDL3/SDL.h>
 #include <SDL3_image/SDL_image.h>
 #include <vector>
-#pragma once
+#include "unit.h"
 
-typedef struct animation {
-    int frames;
-    int y;
-    int animationDelay;
-};
-
-class Character
+class Character : public Unit
 {
 public:
     Character(SDL_Renderer* ren);
+    ~Character() override;
 
-    ~Character();
-
-    void update(float deltaTime);
-
-    void draw(float cameraOffset);
-
-    SDL_FRect* getDest();
+    void update(float deltaTime) override;
+    void draw(float cameraOffset) override;
 
     void handleCollisions(const std::vector<SDL_FRect>& platforms);
-
     float getX();
+
 private:
-    SDL_Renderer* renderer;
+    struct Animation {
+        int frames;
+        int animationDelay;
+    };
+
+    SDL_FRect& dest;          
     SDL_FRect srcRect;
-    SDL_FRect dest;
-    SDL_Texture* Texture;
+
+    SDL_Texture* idleTexture;
     SDL_Texture* TextureLeft;
     SDL_Texture* TextureRight;
     SDL_Texture* currentTexture;
 
-    struct Animation {
-        int frames;
-        int animationDelay;
-        float width;
-    };
-
     Animation walking;
     Animation staying;
 
-    float speed;
     int currentFrame;
     Uint64 lastUpdate;
     float velocityY;
-    float gravity;    
-    float jumpPower;   
-    bool isGrounded;   
-    float posX;
-    float srcWidth;
+    float gravity;
+    float jumpPower;
+    bool isGrounded;
 };

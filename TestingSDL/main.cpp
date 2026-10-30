@@ -15,6 +15,7 @@
 #include "Texture.h"
 #include "Chunk.h"
 #include "ResourceManager.h"
+#include "EnemySpawner.h"
 
 using namespace std;
 
@@ -34,6 +35,7 @@ int main(int argc, char* argv[]) {
     SDL_SetRenderVSync(renderer, 1);
     //        PLAYER
     Character player(renderer);
+    EnemySpawner spawner(renderer);
     SDL_FRect apple = { 0, 0, 0, 0 };
     TTF_Font* font = TTF_OpenFont("fonts/Bitcount.ttf", 24);
     SDL_Color fontColor = { 150, 0, 50, 255 };
@@ -106,13 +108,16 @@ int main(int argc, char* argv[]) {
             chunk->update(cameraOffset);
 
             for (const auto& obj : chunk->getObjects()) {
-                activeWorldObjects.push_back(obj->getDest());
+                if (obj->hasCollision()) {
+                    activeWorldObjects.push_back(obj->getDest());
+                }
             }
         }
 
+        spawner.update(deltaTime, cameraOffset, &player.getDest(), activeWorldObjects);
         player.handleCollisions(activeWorldObjects);
 
-        SDL_SetRenderDrawColor(renderer, 70, 70, 255, 255);
+        SDL_SetRenderDrawColor(renderer, 0, 10, 20, 255);
         SDL_RenderClear(renderer);
 
         for (int i = playerChunk - CHUNK_RADIUS; i <= playerChunk + CHUNK_RADIUS; ++i) {
@@ -120,6 +125,7 @@ int main(int argc, char* argv[]) {
         }
 
         player.draw(cameraOffset);
+        spawner.draw(cameraOffset);
 
         SDL_FRect appleDraw = { apple.x - cameraOffset, apple.y, apple.w, apple.h };
         SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);

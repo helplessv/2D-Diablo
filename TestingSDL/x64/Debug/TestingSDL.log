@@ -1,7 +1,4 @@
 ﻿  main.cpp
-C:\Users\ermak\source\repos\TestingSDL\TestingSDL\Character.h(6,16): warning C4091: typedef : пропускается слева от "animation", когда ни одна переменная не объявлена
-  (компиляция исходного файла "main.cpp")
-  
-C:\Users\ermak\source\repos\TestingSDL\TestingSDL\main.cpp(27,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\ermak\source\repos\TestingSDL\TestingSDL\main.cpp(47,15): warning C4101: event: неиспользованная локальная переменная
+C:\Users\ermak\source\repos\TestingSDL\TestingSDL\main.cpp(28,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\ermak\source\repos\TestingSDL\TestingSDL\main.cpp(49,15): warning C4101: event: неиспользованная локальная переменная
   TestingSDL.vcxproj -> C:\Users\ermak\source\repos\TestingSDL\x64\Debug\TestingSDL.exe

@@ -4,8 +4,8 @@
 #include <string>
 #include "ResourceManager.h" 
 
-Texture::Texture(SDL_Renderer* ren, const char* path, float x, float y, float w, float h)
-    : renderer(ren), posX(x), posY(y), ObjectWidth(w), ObjectHeight(h) {
+Texture::Texture(SDL_Renderer* ren, const char* path, float x, float y, float w, float h, bool collision)
+    : renderer(ren), posX(x), posY(y), ObjectWidth(w), ObjectHeight(h), stalked(collision) {
 
     object = ResourceManager::getInstance().getTexture(renderer, path);
 
@@ -30,6 +30,10 @@ void Texture::draw(float cameraOffset) {
 
 SDL_FRect& Texture::getDest() {
     return dest;
+}
+
+bool Texture::hasCollision() {
+    return stalked;
 }
 
 Texture::~Texture() {

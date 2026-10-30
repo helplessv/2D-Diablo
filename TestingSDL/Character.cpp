@@ -1,36 +1,38 @@
 #include "Character.h"
-#include <vector>
 #include "ResourceManager.h"
 
-Character::Character(SDL_Renderer* ren) : renderer(ren) {
-    Texture = ResourceManager::getInstance().getTexture(renderer, "assets/animations/MainCharStaying.png");
+Character::Character(SDL_Renderer* ren)
+    : Unit(ren, "assets/animations/MainCharStaying.png",
+        380.0f, 275.0f, 40.0f, 100.0f,   // x, y, w, h
+        100, 10, 500.0f),                // hp, dmg, speed
+    dest(getDest())
+{
+    idleTexture = ResourceManager::getInstance().getTexture(renderer, "assets/animations/MainCharStaying.png");
     TextureLeft = ResourceManager::getInstance().getTexture(renderer, "assets/animations/walkingleft.png");
     TextureRight = ResourceManager::getInstance().getTexture(renderer, "assets/animations/walkingright.png");
-    if (!Texture) {
+
+    if (!idleTexture || !TextureLeft || !TextureRight) {
         SDL_Log("Texture Error: %s", SDL_GetError());
     }
-    SDL_SetTextureScaleMode(Texture, SDL_SCALEMODE_NEAREST);
-    SDL_SetTextureScaleMode(TextureLeft, SDL_SCALEMODE_NEAREST);
-    SDL_SetTextureScaleMode(TextureRight, SDL_SCALEMODE_NEAREST);
+    if (idleTexture)  SDL_SetTextureScaleMode(idleTexture, SDL_SCALEMODE_NEAREST);
+    if (TextureLeft)  SDL_SetTextureScaleMode(TextureLeft, SDL_SCALEMODE_NEAREST);
+    if (TextureRight) SDL_SetTextureScaleMode(TextureRight, SDL_SCALEMODE_NEAREST);
 
     staying.frames = 2;
     staying.animationDelay = 400;
 
-    walking.frames = 8; 
+    walking.frames = 8;
     walking.animationDelay = 80;
 
     currentFrame = 0;
     lastUpdate = SDL_GetTicks();
-    currentTexture = Texture;
+    currentTexture = idleTexture;
 
     srcRect = { 0.0f, 0.0f, 18.0f, 44.0f };
-    dest = { 380.0f, 275.0f, 40.0f, 100.0f };
-    speed = 500.0f;
     gravity = 2500.0f;
     jumpPower = 1000.0f;
     velocityY = 0.0f;
     isGrounded = false;
-    posX = 0.0f;
 }
 
 Character::~Character() {
@@ -68,6 +70,7 @@ void Character::handleCollisions(const std::vector<SDL_FRect>& platforms) {
         }
     }
 }
+
 void Character::update(float deltaTime) {
     const bool* keys = SDL_GetKeyboardState(NULL);
     bool moving = false;
@@ -79,17 +82,17 @@ void Character::update(float deltaTime) {
     }
 
     if (keys[SDL_SCANCODE_A]) {
-        dest.x -= speed * deltaTime;
+        moveX(-1.0f, deltaTime);
         currentTexture = TextureLeft;
         moving = true;
     }
     else if (keys[SDL_SCANCODE_D]) {
-        dest.x += speed * deltaTime;
+        moveX(1.0f, deltaTime);
         currentTexture = TextureRight;
         moving = true;
     }
     else {
-        currentTexture = Texture;
+        currentTexture = idleTexture;
     }
 
     if (currentTexture != lastTexture) {
@@ -101,8 +104,7 @@ void Character::update(float deltaTime) {
     SDL_GetTextureSize(currentTexture, &texW, &texH);
     const Animation* currentAnim = moving ? &walking : &staying;
 
-    float frameWidth = texW / currentAnim->frames;
-    srcRect.w = frameWidth;
+    srcRect.w = texW / currentAnim->frames;
     srcRect.h = texH;
 
     velocityY += gravity * deltaTime;
@@ -115,16 +117,13 @@ void Character::update(float deltaTime) {
     }
 
     Uint64 now = SDL_GetTicks();
-    if (now - lastUpdate >= currentAnim->animationDelay) {
+    if (now - lastUpdate >= (Uint64)currentAnim->animationDelay) {
         lastUpdate = now;
         currentFrame = (currentFrame + 1) % currentAnim->frames;
     }
 
     srcRect.x = (float)currentFrame * srcRect.w;
 }
-
-
-
 
 void Character::draw(float cameraOffset) {
     if (currentTexture) {
@@ -135,4 +134,3 @@ void Character::draw(float cameraOffset) {
 }
 
 float Character::getX() { return dest.x; }
-SDL_FRect* Character::getDest() { return &dest; }

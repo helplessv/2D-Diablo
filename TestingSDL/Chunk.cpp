@@ -5,10 +5,15 @@
 Chunk::Chunk(SDL_Renderer* ren, int index) : renderer(ren){
 	const float CHUNK_WIDTH = 1600.0f;
 	float startX = index * CHUNK_WIDTH; 
-	const float GROUND_Y = 800.0f;
+	const float GROUND_Y = 756.0f;
 
-	objects.push_back(std::make_unique<Texture>(renderer, "assets/textures/Ground.png", startX, WINDOW_HEIGHT - 100.0f, 800.0f, 100.0f));
-	objects.push_back(std::make_unique<Texture>(renderer, "assets/textures/Ground.png", startX + 800.0f, WINDOW_HEIGHT - 100.0f, 800.0f, 100.0f));
+
+	for (int i = 0; i < 1600; i += 200) {
+		objects.push_back(std::make_unique<Texture>(renderer, "assets/textures/Ground2.png",
+			startX + i, WINDOW_HEIGHT - 144.0f, 200.0f, 144.0f, true));
+		objects.push_back(std::make_unique<Texture>(renderer, "assets/textures/Ground3.png",
+			startX + i, WINDOW_HEIGHT - 200.0f, 200.0f, 56.0f, false));
+	}
 
 	int amount = rand() % 10;
 	float heights[1600];
@@ -23,7 +28,7 @@ Chunk::Chunk(SDL_Renderer* ren, int index) : renderer(ren){
 
 		float spawnY = currentY - boxH;
 
-		objects.push_back(std::make_unique<Texture>(renderer, "assets/textures/box.png", startX + xPos, spawnY, boxW, boxH));
+		objects.push_back(std::make_unique<Texture>(renderer, "assets/textures/box.png", startX + xPos, spawnY, boxW, boxH, true));
 
 		for (int j = xPos; j < xPos + 50 && j < 1600; j++) {
 			heights[j] = spawnY;
@@ -48,7 +53,8 @@ void Chunk::addBlock(float worldX, float worldY) {
 		snappedX,
 		snappedY,
 		blockSize,
-		blockSize
+		blockSize,
+		true
 	));
 }
 

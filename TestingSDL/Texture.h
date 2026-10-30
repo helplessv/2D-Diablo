@@ -5,12 +5,13 @@
 class Texture
 {
 public:
-    Texture(SDL_Renderer* ren, const char*  path, float x, float y, float w, float h);
+    Texture(SDL_Renderer* ren, const char*  path, float x, float y, float w, float h, bool collision);
     ~Texture();
 
     void update();
     void draw(float cameraOffset);
     SDL_FRect& getDest();
+    bool hasCollision();
 
 private:
     SDL_Renderer* renderer;
@@ -18,4 +19,5 @@ private:
     SDL_FRect dest;
     float posX, posY;
     float ObjectWidth, ObjectHeight;
+    bool stalked;
 };
